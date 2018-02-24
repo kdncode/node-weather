@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather App with NodeJS</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+
+<body>
+        <center>
+            <div class="container">
+                <h1>What is your favorite city?</h1>
+                <p><i>Try 'San Francisco' 🤗</i></p>
+                <fieldset>
+                    <form action="/" method="post">
+                        <div class="input-group input-group-lg">
+                            <input name="city" type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder="Enter a City" required>
+                        </div>
+                        <div>
+                            <button type="submit" class="btn btn-success btn-lg" style="width: 100%;">Get Weather</button>
+                        </div>
+                    </form>
+
+                    <% if(weather !== null){ %>
+                        <p><%= weather %> (in °F)</p>
+                        <% } %>
+                    <% if(error !== null){ %>
+                        <p><%= error %></p>
+                    <% } %>
+                </fieldset>
+            </div>
+    </center>
+    
+</body>
+</html>

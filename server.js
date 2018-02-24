@@ -6,6 +6,8 @@ const app = express();
 
 const apiKey = '7be5cee53b873db905098ce620e5de18';  // Replace with your API
 
+app.set('port', (process.env.PORT || 5000));
+
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set('view engine', 'ejs');
@@ -33,6 +35,7 @@ app.post('/', function (req, res) {
   });
 });
 
-app.listen(3000, function () {
-  console.log('Weather app listening on port 3000!')
-});
+app.listen(app.get('port'), function() {
+    console.log('Node app is running on port', app.get('port'));
+  });
+  

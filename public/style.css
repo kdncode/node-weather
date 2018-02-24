@@ -15,7 +15,7 @@ h1 {
 body {
    /*  Picture via https://unsplash.com/photos/k1qFPrDsn6M  */
     background-color: rgb(134, 105, 214);
-    background: url("https://images.unsplash.com/photo-1474610715337-344726d48cb7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5540403ca5ba986cf7dcc22998e30069&auto=format&fit=crop&w=1350&q=80") no-repeat center center fixed; 
+    /* background: url("https://images.unsplash.com/photo-1474610715337-344726d48cb7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5540403ca5ba986cf7dcc22998e30069&auto=format&fit=crop&w=1350&q=80") no-repeat center center fixed;  */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
